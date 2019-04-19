@@ -9,36 +9,7 @@ import com.google.api.client.http.UrlEncodedContent;
 
 public class TranslatorExample {
 	
-	/*public static void main(String[] args) {
-		
-		//Read this ma bro :)
-		//When you go on google translate website and you translate from English to Igbo for example
-		//you can see the url is :
-		// https://translate.google.com/#en/ig/How%20are%20you
-		//so the code for IGBO is "ig"
-		//see my examples below , i will make tutorial on youtube don't worry
-		
-		try {
-			//English to IGBO
-			String s = "Perustajat alun perin rajoittivat verkkosivuston jäsenyyttä Harvardin opiskelijoille ja myöhemmin Columbialle, Stanfordille ja Yale-opiskelijoille. Jäsenyys laajeni lopulta muille Ivy League kouluille, MIT: lle ja Bostonin korkeakouluille. Facebook lisäsi vähitellen tukea eri yliopistojen opiskelijoille ja lopulta myös lukiolaisille. Vuodesta 2006 lähtien kuka tahansa, joka väittää olevansa vähintään 13-vuotias, on saanut tulla Facebookin rekisteröityksi käyttäjäksi, vaikka tässä vaatimuksessa on vaihteluja paikallisten lakien mukaan. Nimi on peräisin amerikkalaisille yliopisto-opiskelijoille usein annetuista kirjakirjoista. Facebook järjesti ensimmäisen julkisen tarjouksensa (IPO) helmikuussa 2012 ja arvosteli yhtiötä 104 miljardin dollarin arvosta. Se alkoi myydä osakkeita yleisölle kolme kuukautta myöhemmin. Facebook tekee suurimman osan tuloistaan ​​näytöllä näkyvistä mainoksista.";
-			System.out.println(GoogleTranslate.translate("en", s.replace("\n", " ").replace(" ", "^").trim()).replace("^", ""));
-			
-			//English to GREEK
-			System.out.println(GoogleTranslate.translate("el", "how are you"));
-			
-			//English to HAUSA
-			System.out.println(GoogleTranslate.translate("ha", "how are you"));
-			
-			//English to Yoruba
-			System.out.println(GoogleTranslate.translate("yo", "how are you"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		
-		
-		
-	}*/
+
 	
 	public static final Charset ISO_8859_1 = Charset.forName("ISO-8859-1");
     public static final Charset UTF_8 = Charset.forName("UTF-8");
@@ -74,7 +45,7 @@ public class TranslatorExample {
 	public String translation(String given){
 		String myString = "";
 		try{
-			myString = GoogleTranslate.translate(given);
+			myString = GoogleTranslate.translate("en",given);
 		}
 		catch(Exception e){
 			e.printStackTrace();
