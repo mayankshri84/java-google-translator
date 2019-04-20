@@ -38,7 +38,7 @@ public class TranslatorExample {
 			str.append(new TranslatorExample().translation(s)+" ");
 		}
 		System.out.println(str);
-		new TranslatorExample().translation("Perustajat alun perin rajoittivat verkkosivuston jäsenyyttä Harvardin opiskelijoille ja myöhemmin Columbialle, Stanfordille ja Yale-opiskelijoille.");
+		
 	}
 	
 	

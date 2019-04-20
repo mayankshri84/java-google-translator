@@ -37,6 +37,11 @@
 			<artifactId>google-api-services-translate</artifactId>
 			<version>v2-rev51-1.25.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.8-beta4</version>
+		</dependency>
 	</dependencies>
 
 	<name>Java Google Speech Recognizer</name>
